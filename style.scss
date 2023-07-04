@@ -1,0 +1,135 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(42, 83%, 62%, 0.624);
+}
+
+.whole-content {
+  background-color: hsla(100, 10%, 88%, 0.412);
+  // width: 50%;
+  // height: 50%;
+  border-radius: 15px;
+  padding: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.first-part {
+  display: flex;
+  //width: 70%;
+
+  //margin-right: 40px;
+  justify-content: center;
+
+  .day {
+    margin-right: 10px;
+    h1 {
+      font-size: medium;
+      color: hsl(0, 10%, 38%);
+    }
+
+    input {
+      //width: 50%;
+      height: 60%;
+
+      border-radius: 10px;
+      border: none;
+      box-sizing: border-box;
+      border-color: inherit;
+      font-size: 25px;
+
+      &::placeholder {
+        font-size: x-large;
+
+        color: hsl(0, 4%, 18%);
+      }
+    }
+  }
+
+  .month {
+    margin-right: 10px;
+    h1 {
+      font-size: medium;
+      color: hsl(0, 10%, 38%);
+    }
+
+    input {
+      //width: 60%;
+      height: 60%;
+      border-radius: 10px;
+      border: none;
+      box-sizing: border-box;
+      border-color: inherit;
+
+      font-size: 30px;
+
+      &::placeholder {
+        font-size: x-large;
+
+        color: hsl(0, 4%, 18%);
+      }
+    }
+  }
+
+  .year {
+    h1 {
+      font-size: medium;
+      color: hsl(0, 10%, 38%);
+    }
+
+    input {
+      //width: 50%;
+      height: 60%;
+
+      border-radius: 10px;
+      border: none;
+      box-sizing: border-box;
+      border-color: inherit;
+
+      font-size: 30px;
+
+      &::placeholder {
+        font-size: x-large;
+
+        color: hsl(0, 4%, 18%);
+      }
+    }
+  }
+}
+
+.button {
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
+
+  background-color: hsl(104, 100%, 51%);
+  border-radius: 30px;
+}
+
+.second-part {
+  .num {
+    font-size: 50px;
+
+    span {
+      font-size: 50px;
+      color: hsl(104, 100%, 51%);
+    }
+  }
+}
+
+// #message {
+//   font-style: italic;
+//   font-size: small;
+//   color: hsl(0, 94%, 49%);
+// }

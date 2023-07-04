@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/dist/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+
+    <title>MoonRak3r || Age Calculator</title>
+  </head>
+  <body>
+    <div class="whole-content">
+      <div class="first-part">
+        <div class="day">
+          <h1>DAY</h1>
+          <input
+            type="number"
+            name="Day"
+            placeholder="DD"
+            id="day"
+            min="1"
+            max="31"
+          />
+        </div>
+
+        <div class="month">
+          <h1>MONTH</h1>
+          <input
+            type="number"
+            name="month"
+            placeholder="MM"
+            id="month"
+            min="1"
+            max="12"
+          />
+        </div>
+
+        <div class="year">
+          <h1>YEAR</h1>
+          <input
+            type="number"
+            name="year"
+            placeholder="YYYY"
+            id="year"
+            min="1900"
+            max="2099"
+          />
+          <img
+            src="/assets/images/icon-arrow.svg"
+            alt="button"
+            class="button"
+            id="result"
+          />
+        </div>
+      </div>
+
+      <div class="second-part">
+        <i>
+          <h2 class="num"><span id="end">--</span> years</h2>
+
+          <h2 class="num"><span id="end">--</span> months</h2>
+
+          <h2 class="num"><span id="end">--</span> days</h2>
+        </i>
+      </div>
+      <!-- <p id="message"></p> -->
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
