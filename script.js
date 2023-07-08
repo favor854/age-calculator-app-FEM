@@ -18,6 +18,12 @@ const dayError = document.getElementById("dayError");
 
 //const errorMessage = document.getElementById("message");
 
+const minYear = 1900;
+const maxYear = 2099;
+
+const minMonth = 1;
+const maxMonth = 12;
+
 const calculateAge = () => {
   const day = parseInt(dayInput.value);
   const month = parseInt(monthInput.value);
@@ -35,10 +41,21 @@ const calculateAge = () => {
   const maxDay = new Date(year, month, 0).getDate();
 
   if (day < 1 || day > maxDay) {
-    displayError("Must be a valid day.");
+    displayError();
     clearResults();
     return;
   }
+
+  if (isNaN(monthInput) || monthInput < minMonth || monthInput > maxMonth) {
+    monthError.textContent = "must be a valid month";
+    return;
+  }
+
+  if (isNaN(yearInput) || yearInput < minYear || yearInput > maxYear) {
+    yearError.textContent = "must be a valid year";
+    return;
+  }
+  //validYear();
 
   const birthDate = new Date(year, month - 1, day);
   const today = new Date();
@@ -62,19 +79,29 @@ const displayResults = (years, months, days) => {
 };
 
 const clearResults = () => {
-  yearsOutput.textContent = "";
-  monthsOutput.textContent = "";
-  daysOutput.textContent = "";
+  yearsOutput.textContent = "--";
+  monthsOutput.textContent = "--";
+  daysOutput.textContent = "--";
 };
 
 const displayError = () => {
   yearError.textContent = "Must be in the past";
   monthError.textContent = "Must be a valid month";
   dayError.textContent = "Must be a valid day";
-  
+
   headingOne.style.color = "red";
   headingTwo.style.color = "red";
   headingThree.style.color = "red";
+
+  //monthInput.style.borderColor = "red";
 };
 
+// const validYear = () => {
+//   // const minYear = 1900;
+//   // const maxYear = 2099;
+
+//   while (isNaN(yearInput) || yearInput < minYear || yearInput > maxYear) {
+//     yearError.textContent = "must be a valid year"
+//   }
+// }
 answerButton.addEventListener("click", calculateAge);
