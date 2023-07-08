@@ -1,0 +1,22 @@
+// #dayError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
+
+// #monthError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
+
+// #yearError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
+// #message {
+//   font-style: italic;
+//   font-size: small;
+//   color: hsl(0, 94%, 49%);
+// }

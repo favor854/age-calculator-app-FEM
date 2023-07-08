@@ -19,7 +19,7 @@
     <div class="whole-content">
       <div class="first-part">
         <div class="day">
-          <h1>DAY</h1>
+          <h1 id="headingDay">DAY</h1>
           <input
             type="number"
             name="Day"
@@ -32,7 +32,7 @@
         </div>
 
         <div class="month">
-          <h1>MONTH</h1>
+          <h1 id="headingMonth">MONTH</h1>
           <input
             type="number"
             name="month"
@@ -41,11 +41,11 @@
             min="1"
             max="12"
           />
-          <p id="monthError">hello</p>
+          <p id="monthError"></p>
         </div>
 
         <div class="year">
-          <h1>YEAR</h1>
+          <h1 id="headingYear">YEAR</h1>
           <input
             type="number"
             name="year"
@@ -54,17 +54,21 @@
             min="1900"
             max="2099"
           />
+
+          
+
           <p id="yearError"></p>
-          <img
-            src="/assets/images/icon-arrow.svg"
-            alt="button"
-            class="button"
-            id="result"
-          />
         </div>
       </div>
 
       <div class="second-part">
+        <img
+            src="/assets/images/icon-arrow.svg"
+            alt="button"
+            class="button"
+            id="result"
+            onclick="calculateAge()"
+          />
         <i>
           <h2 class="num"><span id="years">--</span> years</h2>
 
@@ -75,8 +79,6 @@
       </div>
       <!-- <p id="message"></p> -->
     </div>
-
-    
 
     <script src="script.js"></script>
   </body>

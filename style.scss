@@ -113,8 +113,13 @@ body {
   // flex-direction: row-reverse;
   // align-items: center;
 
-  background-color: hsl(104, 100%, 51%);
+  background-color: hsl(0, 3%, 13%);
   border-radius: 30px;
+  float: left;
+
+  &:hover {
+    background-color: hsl(104, 100%, 51%);
+  }
 }
 
 .second-part {
@@ -128,24 +133,23 @@ body {
   }
 }
 
+// #dayError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
 
-#dayError {
-  color: hsl(0, 95%, 42%);
-  font-style: italic;
-  font-size: small;
-}
+// #monthError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
 
-#monthError {
-  color: hsl(0, 95%, 42%);
-  font-style: italic;
-  font-size: small;
-}
-
-#yearError {
-  color: hsl(0, 95%, 42%);
-  font-style: italic;
-  font-size: small;
-}
+// #yearError {
+//   color: hsl(0, 95%, 42%);
+//   font-style: italic;
+//   font-size: small;
+// }
 // #message {
 //   font-style: italic;
 //   font-size: small;
